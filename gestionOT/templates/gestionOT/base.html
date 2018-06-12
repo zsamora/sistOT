@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'css/main.css' %}" rel="stylesheet" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="{% static 'js/bootstrap.js'%}"></script>
+</head>
+<body>
+  <nav class="navbar navbar-default" id="colorful-nav">
+      <div class="container">
+          <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                  <li class="inicio"><a href="#"><span class="glyphicon glyphicon-home"></span><h5>INICIO</h5></a></li>
+                  <li class="pendientes"><a href="#"><span class="glyphicon glyphicon-edit"></span><h5>PENDIENTES</h5></a></li>
+                  <li class="reparadas"><a href="#"><span class="glyphicon glyphicon-wrench"></span><h5>REPARADAS</h5></a></li>
+                  <li class="finalizadas"><a href="#"><span class="glyphicon glyphicon-ok-sign"></span><h5>FINALIZADAS</h5></a></li>
+                  <li class="resumen"><a href="#"><span class="glyphicon glyphicon-th-list"></span><h5>RESUMEN OTs</h5></a></li>
+                  <li class="clientes"><a href="#"><span class="glyphicon glyphicon-user"></span><h5>CLIENTES</h5></a></li>
+                  <li class="unidades"><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span><h5>UNIDADES</h5></a></li>
+                  <li class="inventario"><a href="#"><span class="glyphicon glyphicon-barcode"></span><h5>INVENTARIO</h5></a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <hr class="sep-principal">
+{% block content %}
+
+{% endblock %}
+  <footer>
+    <h4>Desarrollado por Benjamín Zamora</h4>
+  </footer>
+</body>
+</html>

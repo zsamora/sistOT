@@ -1,3 +1,6 @@
 from django.db import models
 
-# Create your models here.
+#class Objeto(models.Model):
+#    atributo  = "hola"
+#    def __str__(self):
+#        return self.atributo
